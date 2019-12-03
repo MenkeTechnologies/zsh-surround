@@ -1,8 +1,6 @@
-SURROUND=true
-
 #automatically add closing punct
 surround(){
-    if [[ $SURROUND == true ]]; then
+    if [[ $ZPWR_SURROUND != false ]]; then
         next=$((CURSOR+1))
 
         local char=${BUFFER[$CURSOR]}
