@@ -1,10 +1,12 @@
 #automatically add closing punct
 surround(){
     if [[ $ZPWR_SURROUND != false ]]; then
-        if [[ -f "$ZPWR_LOCK_FILE" ]]; then
-            if cat $ZPWR_LOCK_FILE | grep -q $$; then
-                zle .self-insert
-                return 0
+        if [[ $ZPWR_SEND_KEYS_FULL == false ]]; then
+            if [[ -f "$ZPWR_LOCK_FILE" ]]; then
+                if cat $ZPWR_LOCK_FILE | grep -q $$; then
+                    zle .self-insert
+                    return 0
+                fi
             fi
         fi
 
