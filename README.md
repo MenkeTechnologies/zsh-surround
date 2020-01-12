@@ -1,6 +1,8 @@
 # zsh-surround
 
 This plugin inserts closing parantheses, single and double quotes, backticks and brackets on the zsh command line.
+The delete key will delete the matching character when appropriate.
+This behavior was written to mimic the funtionality in most IDEs.
 
 ## Install for Oh My Zsh
 
