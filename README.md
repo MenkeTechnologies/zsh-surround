@@ -16,5 +16,5 @@ Add `zsh-surround` to plugins array in ~/.zshrc
 git clone https://github.com/MenkeTechnologies/zsh-surround.git
 ```
 
-copy all _ files in src directory to somewhere in fpath
+source zsh-surround.plugin.zsh in .zshrc
 
