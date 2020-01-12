@@ -1,4 +1,4 @@
-#zsh-surround
+# zsh-surround
 
 This plugin inserts closing parantheses, single and double quotes, backticks and brackets on the zsh command line.
 
